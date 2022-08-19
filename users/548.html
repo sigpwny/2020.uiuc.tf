@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIUCTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/themes/uiuctf/static/img/favicon.ico?d=6ce9a212" type="image/x-icon">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/fonts.min.css?d=6ce9a212">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/main.min.css?d=6ce9a212">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/core.min.css?d=6ce9a212">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/pranav.min.css?d=6ce9a212">
+	
+
+	
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "3d4105cd1d1f9775bfe549cb89681f3168021343d0815428f94002a035637d6a",
+			'userMode': "teams",
+			'userId': 0,
+			'start': 1595030400,
+			'end': 1595210400,
+		}
+	</script>
+	<style id="theme-color">
+:root {--theme-color: #71B5FB;}
+.navbar{background-color: var(--theme-color) !important;}
+.jumbotron{background-color: var(--theme-color) !important;}
+  font-family: 'FinkHeavy'!important;
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="/files/0ef3ada3b5006be684326e01ea3ba13e/uiuctf-small.png" height="25" alt="UIUCTF">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+					aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/users">Users</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/teams">Teams</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/register">
+									<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+										<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+									</span>
+									<span class="d-sm-block d-md-none d-lg-block">
+										<i class="fas fa-user-plus pr-1"></i>Register
+									</span>
+								</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/login">
+								<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+									<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+								</span>
+								<span class="d-sm-block d-md-none d-lg-block">
+									<i class="fas fa-sign-in-alt pr-1"></i>Login
+								</span>
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+	<div class="jumbotron">
+		<div class="container">
+			<h1 id="user-id" user-id="548">kira</h1>
+
+			
+				<h2 id="user-team-id" user-team-id="358">
+					<a href="/teams/358">
+						<span class="badge badge-secondary">
+							SaudiArabia
+						</span>
+					</a>
+				</h2>
+			
+
+			
+
+			
+
+			
+
+			
+				<div class="user-team-info">
+					<h2 id="user-team-place" class="text-center">
+						
+						
+						
+							339th
+							<small>place</small>
+						
+					</h2>
+					<h2 id="user-team-score" class="text-center">
+						20
+						<small>points</small>
+					</h2>
+				</div>
+			
+
+			<div class="pt-3">
+				
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+
+			
+
+			<br>
+
+			
+			
+
+			
+				<div id="keys-pie-graph" class="w-50 mr-0 pr-0 float-left d-none d-md-block d-lg-block">
+					<div class="text-center">
+						<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+					</div>
+				</div>
+				<div id="categories-pie-graph" class="w-50 mr-0 pr-0 float-left d-none d-md-block d-lg-block">
+					<div class="text-center">
+						<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+					</div>
+				</div>
+				<br class="clearfix">
+				<div id="score-graph" class="w-100 float-right d-none d-md-block d-lg-block">
+					<div class="text-center">
+						<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				
+
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Solves</h3>
+						<table class="table table-striped">
+							<thead>
+							<tr>
+								<td><b>Challenge</b></td>
+								<td class="d-none d-md-block d-lg-block"><b>Category</b></td>
+								<td><b>Value</b></td>
+								<td><b>Time</b></td>
+							</tr>
+							</thead>
+							<tbody>
+							
+								<tr>
+									<td>
+										<a href="/challenges#K.K&#39;s Mixtape">K.K&#39;s Mixtape</a>
+									</td>
+									<td class="d-none d-md-block d-lg-block">Warmup</td>
+									<td>20</td>
+									<td class="solve-time">
+										<span data-time="2020-07-18T00:44:58Z"></span>
+									</td>
+								</tr>
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+			
+		
+	</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io" class="text-secondary">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script defer src="/themes/uiuctf/static/js/vendor.bundle.min.js?d=6ce9a212"></script>
+	<script defer src="/themes/uiuctf/static/js/core.min.js?d=6ce9a212"></script>
+	<script defer src="/themes/uiuctf/static/js/helpers.min.js?d=6ce9a212"></script>
+
+	
+	<script defer src="/themes/uiuctf/static/js/pages/stats.min.js?d=6ce9a212"></script>
+
+
+	
+	<script>
+		var stats_data = {"account_id": 548, "id": 548, "name": "kira", "type": "user"};
+	</script>
+	<script defer src="/themes/uiuctf/static/js/plotly.bundle.min.js?d=6ce9a212"></script>
+	<script defer src="/themes/uiuctf/static/js/graphs.min.js?d=6ce9a212"></script>
+
+
+	
+
+	
+</body>
+</html>

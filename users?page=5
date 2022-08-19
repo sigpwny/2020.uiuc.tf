@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIUCTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/themes/uiuctf/static/img/favicon.ico?d=f1bdd733" type="image/x-icon">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/fonts.min.css?d=f1bdd733">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/main.min.css?d=f1bdd733">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/core.min.css?d=f1bdd733">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/pranav.min.css?d=f1bdd733">
+	
+
+	
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "3d4105cd1d1f9775bfe549cb89681f3168021343d0815428f94002a035637d6a",
+			'userMode': "teams",
+			'userId': 0,
+			'start': 1595030400,
+			'end': 1595210400,
+		}
+	</script>
+	<style id="theme-color">
+:root {--theme-color: #71B5FB;}
+.navbar{background-color: var(--theme-color) !important;}
+.jumbotron{background-color: var(--theme-color) !important;}
+  font-family: 'FinkHeavy'!important;
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="/files/0ef3ada3b5006be684326e01ea3ba13e/uiuctf-small.png" height="25" alt="UIUCTF">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+					aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/users">Users</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/teams">Teams</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/register">
+									<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+										<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+									</span>
+									<span class="d-sm-block d-md-none d-lg-block">
+										<i class="fas fa-user-plus pr-1"></i>Register
+									</span>
+								</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/login">
+								<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+									<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+								</span>
+								<span class="d-sm-block d-md-none d-lg-block">
+									<i class="fas fa-sign-in-alt pr-1"></i>Login
+								</span>
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Users</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<td><b>User</b></td>
+						<td><b>Website</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Affiliation</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Country</b></td>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/211">
+										NoahNacho
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-us"></i>
+										United States
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/212">
+										cyber8knight
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/213">
+										Jinx
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/214">
+										alphajr
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-np"></i>
+										Nepal
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/215">
+										AC01010
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/216">
+										cold_synyster
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/217">
+										kw
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/218">
+										R33NIGN3
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-in"></i>
+										India
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/219">
+										Mystiz
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/220">
+										signified
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/221">
+										RedDagger
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-in"></i>
+										India
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/222">
+										GeoffreyY
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/223">
+										AcePhers
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/224">
+										wii
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/225">
+										Kweer
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/226">
+										Fy
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/227">
+										nagare_hikari
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/228">
+										JaSon9182
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/229">
+										H0j3n
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/230">
+										JaSon918273
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/231">
+										Garfellow
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/232">
+										cire_meat_pop
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/233">
+										anshit01
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/234">
+										sticky
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/235">
+										t0mcr8se
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/236">
+										cifree
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/237">
+										Zepto
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/238">
+										rudrakher
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/239">
+										Acer
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/240">
+										Djedaini
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/241">
+										w3rni0
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/242">
+										tomhe
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/243">
+										c3p0
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/244">
+										dcua
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/245">
+										eldonng
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/246">
+										Team Bagel
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/247">
+										heroleggo
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/248">
+										OHYA
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/249">
+										TheFakeS1imShady
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-np"></i>
+										Nepal
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/250">
+										Hausa_
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/251">
+										wonhee0410
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/252">
+										Rad1antH9wk
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/253">
+										raka.kuswanto
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/254">
+										Logitte
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/255">
+										Iam9r00t
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/256">
+										syntax404
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/257">
+										Roaea
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/258">
+										0awawa0
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/259">
+										PwnaSonic
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+								</span>
+							</td>
+						</tr>
+					
+						<tr>
+							<td>
+								
+									<a href="/users/260">
+										robotsquid
+									</a>
+								
+								
+							</td>
+							<td class="text-center" style="width: 10px;">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								
+							</td>
+							<td class="d-none d-md-table-cell d-lg-table-cell">
+								<span>
+									
+										<i class="flag-za"></i>
+										South Africa
+									
+								</span>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-center">Page
+						<br>
+						
+							<a href="/users?page=4">
+								&lt;&lt;&lt;
+							</a>
+						
+						<select class="page-select">
+							
+							<option >1</option>
+							
+							<option >2</option>
+							
+							<option >3</option>
+							
+							<option >4</option>
+							
+							<option selected>5</option>
+							
+							<option >6</option>
+							
+							<option >7</option>
+							
+							<option >8</option>
+							
+							<option >9</option>
+							
+							<option >10</option>
+							
+							<option >11</option>
+							
+							<option >12</option>
+							
+							<option >13</option>
+							
+							<option >14</option>
+							
+							<option >15</option>
+							
+							<option >16</option>
+							
+							<option >17</option>
+							
+							<option >18</option>
+							
+							<option >19</option>
+							
+							<option >20</option>
+							
+							<option >21</option>
+							
+							<option >22</option>
+							
+							<option >23</option>
+							
+							<option >24</option>
+							
+							<option >25</option>
+							
+							<option >26</option>
+							
+						</select>
+						
+							<a href="/users?page=6">
+								&gt;&gt;&gt;
+							</a>
+						
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io" class="text-secondary">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script defer src="/themes/uiuctf/static/js/vendor.bundle.min.js?d=f1bdd733"></script>
+	<script defer src="/themes/uiuctf/static/js/core.min.js?d=f1bdd733"></script>
+	<script defer src="/themes/uiuctf/static/js/helpers.min.js?d=f1bdd733"></script>
+
+	
+	<script defer src="/themes/uiuctf/static/js/pages/main.min.js?d=f1bdd733"></script>
+	
+
+	
+
+
+	
+
+	
+</body>
+</html>

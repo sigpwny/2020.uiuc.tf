@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": 369, "description": "Found a way to exploit crazy_caches before ever getting to a shell", "user": 759, "value": 50, "team_id": 369, "user_id": 759, "id": 1, "date": "2020-07-19T01:53:42+00:00", "category": "Kernel Exploitation", "icon": null, "name": "crazy_caches but before rash"}]}

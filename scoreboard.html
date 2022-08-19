@@ -1,0 +1,5383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIUCTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/themes/uiuctf/static/img/favicon.ico?d=c8eada87" type="image/x-icon">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/fonts.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/main.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/core.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/pranav.min.css?d=c8eada87">
+	
+	
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "3d4105cd1d1f9775bfe549cb89681f3168021343d0815428f94002a035637d6a",
+			'userMode': "teams",
+			'userId': 0,
+			'start': 1595030400,
+			'end': 1595210400,
+		}
+	</script>
+	<style id="theme-color">
+:root {--theme-color: #71B5FB;}
+.navbar{background-color: var(--theme-color) !important;}
+.jumbotron{background-color: var(--theme-color) !important;}
+  font-family: 'FinkHeavy'!important;
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="/files/0ef3ada3b5006be684326e01ea3ba13e/uiuctf-small.png" height="25" alt="UIUCTF">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+					aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/users">Users</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/teams">Teams</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/register">
+									<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+										<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+									</span>
+									<span class="d-sm-block d-md-none d-lg-block">
+										<i class="fas fa-user-plus pr-1"></i>Register
+									</span>
+								</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/login">
+								<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+									<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+								</span>
+								<span class="d-sm-block d-md-none d-lg-block">
+									<i class="fas fa-sign-in-alt pr-1"></i>Login
+								</span>
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+<div class="jumbotron">
+	<div class="container">
+		<h1>Scoreboard</h1>
+	</div>
+</div>
+<div class="container">
+	
+		
+
+		<div id="score-graph" class="row">
+			<div class="col-md-12 text-center">
+				<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+			</div>
+		</div>
+
+		
+		<div id="scoreboard" class="row">
+			<div class="col-md-12">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<td scope="col" width="10px"><b>Place</b></td>
+							<td scope="col"><b>Team</b></td>
+							<td scope="col"><b>Score</b></td>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<th scope="row" class="text-center">1</th>
+							<td>
+								<a href="/teams/39">
+									DiceGang
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/DiceGang">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>9526</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">2</th>
+							<td>
+								<a href="/teams/97">
+									Black Bauhinia
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Black Bauhinia">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>7126</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">3</th>
+							<td>
+								<a href="/teams/149">
+									PPP
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/PPP">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>4810</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">4</th>
+							<td>
+								<a href="/teams/408">
+									menhara-chan
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/menhara-chan">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>4480</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">5</th>
+							<td>
+								<a href="/teams/119">
+									zer0pts
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/zer0pts">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>4480</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">6</th>
+							<td>
+								<a href="/teams/442">
+									MINUS
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/MINUS">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>4010</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">7</th>
+							<td>
+								<a href="/teams/353">
+									WreckTheLine
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/WreckTheLine">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>3910</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">8</th>
+							<td>
+								<a href="/teams/52">
+									IrisSec
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/IrisSec">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>3410</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">9</th>
+							<td>
+								<a href="/teams/7">
+									3PAC
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/3PAC">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>3310</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">10</th>
+							<td>
+								<a href="/teams/335">
+									VelociraptorPenguins
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/VelociraptorPenguins">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>2906</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">11</th>
+							<td>
+								<a href="/teams/117">
+									The Order of Bit
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/The Order of Bit">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>2780</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">12</th>
+							<td>
+								<a href="/teams/369">
+									takane
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/takane">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>2720</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">13</th>
+							<td>
+								<a href="/teams/326">
+									HTCPCP://
+
+									
+								</a>
+							</td>
+							<td>2480</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">14</th>
+							<td>
+								<a href="/teams/200">
+									OpenToAll
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/OpenToAll">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>2340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">15</th>
+							<td>
+								<a href="/teams/401">
+									CTF.SG
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/CTF.SG">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>2160</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">16</th>
+							<td>
+								<a href="/teams/333">
+									infuzion
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/infuzion">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1760</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">17</th>
+							<td>
+								<a href="/teams/37">
+									HackingForSoju
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/HackingForSoju">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1750</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">18</th>
+							<td>
+								<a href="/teams/98">
+									KGB_sec
+
+									
+								</a>
+							</td>
+							<td>1670</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">19</th>
+							<td>
+								<a href="/teams/59">
+									4dumbsters
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/4dumbsters">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1660</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">20</th>
+							<td>
+								<a href="/teams/92">
+									RGBsec
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/RGBsec">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1640</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">21</th>
+							<td>
+								<a href="/teams/354">
+									noraneco
+
+									
+								</a>
+							</td>
+							<td>1530</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">22</th>
+							<td>
+								<a href="/teams/147">
+									TeamC8
+
+									
+								</a>
+							</td>
+							<td>1530</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">23</th>
+							<td>
+								<a href="/teams/466">
+									Sieberrsec
+
+									
+								</a>
+							</td>
+							<td>1520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">24</th>
+							<td>
+								<a href="/teams/447">
+									Bailey&#39;s Boys
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Bailey&#39;s Boys">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1430</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">25</th>
+							<td>
+								<a href="/teams/313">
+									flying is hard
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/flying is hard">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1410</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">26</th>
+							<td>
+								<a href="/teams/516">
+									λ⁶
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/λ⁶">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1410</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">27</th>
+							<td>
+								<a href="/teams/349">
+									w01verines
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/w01verines">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1380</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">28</th>
+							<td>
+								<a href="/teams/613">
+									Dunsp4rce
+
+									
+								</a>
+							</td>
+							<td>1330</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">29</th>
+							<td>
+								<a href="/teams/646">
+									SignificantBits
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/SignificantBits">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1330</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">30</th>
+							<td>
+								<a href="/teams/292">
+									Dent
+
+									
+								</a>
+							</td>
+							<td>1310</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">31</th>
+							<td>
+								<a href="/teams/79">
+									Elnath
+
+									
+								</a>
+							</td>
+							<td>1290</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">32</th>
+							<td>
+								<a href="/teams/78">
+									/[spin]*s/
+
+									
+										
+										<a href="https://majorleaguecyber.org/t//[spin]*s/">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">33</th>
+							<td>
+								<a href="/teams/330">
+									b01lers
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/b01lers">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">34</th>
+							<td>
+								<a href="/teams/275">
+									Fairy Sector
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Fairy Sector">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1180</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">35</th>
+							<td>
+								<a href="/teams/576">
+									GeeseWithTeeth
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/GeeseWithTeeth">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1090</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">36</th>
+							<td>
+								<a href="/teams/76">
+									crawfishing
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/crawfishing">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1090</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">37</th>
+							<td>
+								<a href="/teams/534">
+									supersymmetry
+
+									
+								</a>
+							</td>
+							<td>1080</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">38</th>
+							<td>
+								<a href="/teams/38">
+									Defenit
+
+									
+								</a>
+							</td>
+							<td>1060</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">39</th>
+							<td>
+								<a href="/teams/57">
+									bcmp
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/bcmp">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1060</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">40</th>
+							<td>
+								<a href="/teams/65">
+									[sqrt(-1) + 1]
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/[sqrt(-1) + 1]">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1020</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">41</th>
+							<td>
+								<a href="/teams/512">
+									???
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/???">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1020</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">42</th>
+							<td>
+								<a href="/teams/294">
+									Corax
+
+									
+								</a>
+							</td>
+							<td>1010</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">43</th>
+							<td>
+								<a href="/teams/315">
+									qwertyperson
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/qwertyperson">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1010</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">44</th>
+							<td>
+								<a href="/teams/744">
+									Dashu
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Dashu">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>1000</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">45</th>
+							<td>
+								<a href="/teams/181">
+									Zense
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Zense">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>960</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">46</th>
+							<td>
+								<a href="/teams/64">
+									candlesauce
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/candlesauce">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>910</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">47</th>
+							<td>
+								<a href="/teams/332">
+									technic
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/technic">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>910</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">48</th>
+							<td>
+								<a href="/teams/34">
+									by7ch
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/by7ch">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>890</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">49</th>
+							<td>
+								<a href="/teams/334">
+									RATF
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/RATF">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>890</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">50</th>
+							<td>
+								<a href="/teams/340">
+									Jump Rope Ninjas
+
+									
+								</a>
+							</td>
+							<td>870</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">51</th>
+							<td>
+								<a href="/teams/225">
+									STeam
+
+									
+								</a>
+							</td>
+							<td>830</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">52</th>
+							<td>
+								<a href="/teams/582">
+									flib
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/flib">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>830</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">53</th>
+							<td>
+								<a href="/teams/233">
+									y0d31
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/y0d31">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>810</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">54</th>
+							<td>
+								<a href="/teams/40">
+									AsturiesCTF
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/AsturiesCTF">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>790</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">55</th>
+							<td>
+								<a href="/teams/283">
+									punk5n0td34d
+
+									
+								</a>
+							</td>
+							<td>790</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">56</th>
+							<td>
+								<a href="/teams/89">
+									Infinity
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Infinity">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>780</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">57</th>
+							<td>
+								<a href="/teams/121">
+									DROP TABLE users
+
+									
+								</a>
+							</td>
+							<td>770</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">58</th>
+							<td>
+								<a href="/teams/151">
+									scsc
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/scsc">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>760</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">59</th>
+							<td>
+								<a href="/teams/74">
+									Hackpack
+
+									
+								</a>
+							</td>
+							<td>740</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">60</th>
+							<td>
+								<a href="/teams/48">
+									DarkArmy
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/DarkArmy">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>710</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">61</th>
+							<td>
+								<a href="/teams/136">
+									frickari
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/frickari">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>680</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">62</th>
+							<td>
+								<a href="/teams/599">
+									Cáerme
+
+									
+								</a>
+							</td>
+							<td>680</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">63</th>
+							<td>
+								<a href="/teams/314">
+									DC604
+
+									
+								</a>
+							</td>
+							<td>660</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">64</th>
+							<td>
+								<a href="/teams/692">
+									monka
+
+									
+								</a>
+							</td>
+							<td>650</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">65</th>
+							<td>
+								<a href="/teams/61">
+									maniacs
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/maniacs">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>650</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">66</th>
+							<td>
+								<a href="/teams/492">
+									CSI
+
+									
+								</a>
+							</td>
+							<td>620</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">67</th>
+							<td>
+								<a href="/teams/184">
+									The Additional Payphones
+
+									
+								</a>
+							</td>
+							<td>600</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">68</th>
+							<td>
+								<a href="/teams/497">
+									0xfb
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/0xfb">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>600</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">69</th>
+							<td>
+								<a href="/teams/399">
+									TopWing
+
+									
+								</a>
+							</td>
+							<td>600</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">70</th>
+							<td>
+								<a href="/teams/457">
+									Model/Actors
+
+									
+								</a>
+							</td>
+							<td>590</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">71</th>
+							<td>
+								<a href="/teams/130">
+									Stack Smash Dragons
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Stack Smash Dragons">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>590</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">72</th>
+							<td>
+								<a href="/teams/345">
+									Isle Be Back
+
+									
+								</a>
+							</td>
+							<td>590</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">73</th>
+							<td>
+								<a href="/teams/180">
+									(mendung)10^6
+
+									
+								</a>
+							</td>
+							<td>580</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">74</th>
+							<td>
+								<a href="/teams/12">
+									World Wide Wheat
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/World Wide Wheat">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>570</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">75</th>
+							<td>
+								<a href="/teams/577">
+									notpenguin1
+
+									
+								</a>
+							</td>
+							<td>560</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">76</th>
+							<td>
+								<a href="/teams/145">
+									Literal Dips
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Literal Dips">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>560</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">77</th>
+							<td>
+								<a href="/teams/257">
+									RedAgainstTheMachine
+
+									
+								</a>
+							</td>
+							<td>560</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">78</th>
+							<td>
+								<a href="/teams/10">
+									BS14_itech
+
+									
+								</a>
+							</td>
+							<td>560</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">79</th>
+							<td>
+								<a href="/teams/301">
+									L1on5
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/L1on5">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>560</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">80</th>
+							<td>
+								<a href="/teams/755">
+									test team 6
+
+									
+								</a>
+							</td>
+							<td>550</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">81</th>
+							<td>
+								<a href="/teams/697">
+									nanocomp
+
+									
+								</a>
+							</td>
+							<td>540</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">82</th>
+							<td>
+								<a href="/teams/304">
+									simple
+
+									
+								</a>
+							</td>
+							<td>540</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">83</th>
+							<td>
+								<a href="/teams/427">
+									threat.club
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/threat.club">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>540</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">84</th>
+							<td>
+								<a href="/teams/396">
+									1 Person 100 CTFs
+
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">85</th>
+							<td>
+								<a href="/teams/118">
+									Astartes
+
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">86</th>
+							<td>
+								<a href="/teams/17">
+									tri{hacking}
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/tri{hacking}">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">87</th>
+							<td>
+								<a href="/teams/621">
+									Cameronol
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Cameronol">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">88</th>
+							<td>
+								<a href="/teams/336">
+									dura - alone
+
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">89</th>
+							<td>
+								<a href="/teams/711">
+									cr0wn
+
+									
+								</a>
+							</td>
+							<td>520</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">90</th>
+							<td>
+								<a href="/teams/481">
+									Bessie The Cow
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Bessie The Cow">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>510</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">91</th>
+							<td>
+								<a href="/teams/750">
+									test team 4
+
+									
+								</a>
+							</td>
+							<td>500</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">92</th>
+							<td>
+								<a href="/teams/752">
+									test team 5
+
+									
+								</a>
+							</td>
+							<td>500</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">93</th>
+							<td>
+								<a href="/teams/11">
+									coffee and beef
+
+									
+								</a>
+							</td>
+							<td>500</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">94</th>
+							<td>
+								<a href="/teams/786">
+									Testteamdonotjoin
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Testteamdonotjoin">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>500</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">95</th>
+							<td>
+								<a href="/teams/494">
+									Ba Sing Sec
+
+									
+								</a>
+							</td>
+							<td>490</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">96</th>
+							<td>
+								<a href="/teams/9">
+									ÄlgBaguette
+
+									
+								</a>
+							</td>
+							<td>460</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">97</th>
+							<td>
+								<a href="/teams/360">
+									isss
+
+									
+								</a>
+							</td>
+							<td>450</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">98</th>
+							<td>
+								<a href="/teams/36">
+									sqrt_warlock
+
+									
+								</a>
+							</td>
+							<td>440</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">99</th>
+							<td>
+								<a href="/teams/318">
+									Gh0stSh3ll
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Gh0stSh3ll">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>440</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">100</th>
+							<td>
+								<a href="/teams/373">
+									0S1N7N3RD
+
+									
+								</a>
+							</td>
+							<td>440</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">101</th>
+							<td>
+								<a href="/teams/168">
+									dcua
+
+									
+								</a>
+							</td>
+							<td>420</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">102</th>
+							<td>
+								<a href="/teams/432">
+									Team_Laon
+
+									
+								</a>
+							</td>
+							<td>410</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">103</th>
+							<td>
+								<a href="/teams/780">
+									betmyself2
+
+									
+								</a>
+							</td>
+							<td>410</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">104</th>
+							<td>
+								<a href="/teams/31">
+									unicorns&amp;magic
+
+									
+								</a>
+							</td>
+							<td>400</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">105</th>
+							<td>
+								<a href="/teams/249">
+									ByteForc3
+
+									
+								</a>
+							</td>
+							<td>400</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">106</th>
+							<td>
+								<a href="/teams/657">
+									Hexion
+
+									
+								</a>
+							</td>
+							<td>390</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">107</th>
+							<td>
+								<a href="/teams/757">
+									betmyself
+
+									
+								</a>
+							</td>
+							<td>390</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">108</th>
+							<td>
+								<a href="/teams/128">
+									0xw3bs3c
+
+									
+								</a>
+							</td>
+							<td>380</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">109</th>
+							<td>
+								<a href="/teams/458">
+									S&amp;N
+
+									
+								</a>
+							</td>
+							<td>370</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">110</th>
+							<td>
+								<a href="/teams/720">
+									qqqqqqqq
+
+									
+								</a>
+							</td>
+							<td>370</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">111</th>
+							<td>
+								<a href="/teams/250">
+									ri5e
+
+									
+								</a>
+							</td>
+							<td>360</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">112</th>
+							<td>
+								<a href="/teams/163">
+									AAShakil
+
+									
+								</a>
+							</td>
+							<td>360</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">113</th>
+							<td>
+								<a href="/teams/261">
+									NEUQRO
+
+									
+								</a>
+							</td>
+							<td>350</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">114</th>
+							<td>
+								<a href="/teams/116">
+									PwnaSonic
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/PwnaSonic">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>350</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">115</th>
+							<td>
+								<a href="/teams/614">
+									Interval
+
+									
+								</a>
+							</td>
+							<td>340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">116</th>
+							<td>
+								<a href="/teams/729">
+									Cool Team Nice
+
+									
+								</a>
+							</td>
+							<td>340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">117</th>
+							<td>
+								<a href="/teams/205">
+									happymisc
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/happymisc">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">118</th>
+							<td>
+								<a href="/teams/553">
+									DaVinciCode
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/DaVinciCode">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">119</th>
+							<td>
+								<a href="/teams/215">
+									unnamed
+
+									
+								</a>
+							</td>
+							<td>340</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">120</th>
+							<td>
+								<a href="/teams/394">
+									Team
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">121</th>
+							<td>
+								<a href="/teams/196">
+									$tarTrooper
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">122</th>
+							<td>
+								<a href="/teams/625">
+									T35H
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">123</th>
+							<td>
+								<a href="/teams/18">
+									Schr0ding3r5
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">124</th>
+							<td>
+								<a href="/teams/700">
+									Magnum
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">125</th>
+							<td>
+								<a href="/teams/525">
+									twitter_security
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">126</th>
+							<td>
+								<a href="/teams/680">
+									keep__calm
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/keep__calm">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">127</th>
+							<td>
+								<a href="/teams/279">
+									rasputin
+
+									
+								</a>
+							</td>
+							<td>320</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">128</th>
+							<td>
+								<a href="/teams/782">
+									betmyself3
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/betmyself3">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>310</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">129</th>
+							<td>
+								<a href="/teams/681">
+									thi8eivi
+
+									
+								</a>
+							</td>
+							<td>310</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">130</th>
+							<td>
+								<a href="/teams/308">
+									Group 3
+
+									
+								</a>
+							</td>
+							<td>310</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">131</th>
+							<td>
+								<a href="/teams/633">
+									asal_main
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">132</th>
+							<td>
+								<a href="/teams/608">
+									Bras
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">133</th>
+							<td>
+								<a href="/teams/320">
+									Hack&#39;raw
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">134</th>
+							<td>
+								<a href="/teams/717">
+									caca
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">135</th>
+							<td>
+								<a href="/teams/528">
+									a1c3
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">136</th>
+							<td>
+								<a href="/teams/735">
+									Temporary Cool
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">137</th>
+							<td>
+								<a href="/teams/302">
+									I_and_i
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">138</th>
+							<td>
+								<a href="/teams/341">
+									::1
+
+									
+								</a>
+							</td>
+							<td>300</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">139</th>
+							<td>
+								<a href="/teams/312">
+									DeusExMachina
+
+									
+								</a>
+							</td>
+							<td>290</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">140</th>
+							<td>
+								<a href="/teams/77">
+									burner_herz0g
+
+									
+								</a>
+							</td>
+							<td>280</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">141</th>
+							<td>
+								<a href="/teams/588">
+									lucas_sanchez
+
+									
+								</a>
+							</td>
+							<td>280</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">142</th>
+							<td>
+								<a href="/teams/135">
+									m0nst3r_1nd1a
+
+									
+								</a>
+							</td>
+							<td>280</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">143</th>
+							<td>
+								<a href="/teams/237">
+									sorvast
+
+									
+								</a>
+							</td>
+							<td>280</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">144</th>
+							<td>
+								<a href="/teams/32">
+									Hunters
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Hunters">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>280</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">145</th>
+							<td>
+								<a href="/teams/278">
+									sweetberrymilk
+
+									
+								</a>
+							</td>
+							<td>270</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">146</th>
+							<td>
+								<a href="/teams/269">
+									flat_earth
+
+									
+								</a>
+							</td>
+							<td>270</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">147</th>
+							<td>
+								<a href="/teams/255">
+									Nice guys
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Nice guys">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>270</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">148</th>
+							<td>
+								<a href="/teams/594">
+									break_the_code
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">149</th>
+							<td>
+								<a href="/teams/42">
+									Team8
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">150</th>
+							<td>
+								<a href="/teams/188">
+									Dc1ph3R
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">151</th>
+							<td>
+								<a href="/teams/381">
+									sample_text
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">152</th>
+							<td>
+								<a href="/teams/727">
+									PDKDPDDPK
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">153</th>
+							<td>
+								<a href="/teams/63">
+									Pwnie_Island
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">154</th>
+							<td>
+								<a href="/teams/110">
+									xPyArr0w
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/xPyArr0w">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">155</th>
+							<td>
+								<a href="/teams/305">
+									Learning Is Fun!
+
+									
+								</a>
+							</td>
+							<td>260</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">156</th>
+							<td>
+								<a href="/teams/90">
+									S@n!t!z3r
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/S@n!t!z3r">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>250</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">157</th>
+							<td>
+								<a href="/teams/636">
+									masaladdosa2
+
+									
+								</a>
+							</td>
+							<td>250</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">158</th>
+							<td>
+								<a href="/teams/162">
+									CYberMouflons
+
+									
+								</a>
+							</td>
+							<td>250</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">159</th>
+							<td>
+								<a href="/teams/344">
+									e3sh!t
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">160</th>
+							<td>
+								<a href="/teams/68">
+									DC562
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">161</th>
+							<td>
+								<a href="/teams/126">
+									flag{}___Orz
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">162</th>
+							<td>
+								<a href="/teams/26">
+									TeamBrotherHood
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">163</th>
+							<td>
+								<a href="/teams/708">
+									TESTM123
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">164</th>
+							<td>
+								<a href="/teams/133">
+									FireFall
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">165</th>
+							<td>
+								<a href="/teams/84">
+									Les Tabarnhackers
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Les Tabarnhackers">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">166</th>
+							<td>
+								<a href="/teams/8">
+									A Sense Of Pride and Accomplishment
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">167</th>
+							<td>
+								<a href="/teams/415">
+									Recon Corps
+
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">168</th>
+							<td>
+								<a href="/teams/54">
+									SECARMY
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/SECARMY">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">169</th>
+							<td>
+								<a href="/teams/148">
+									After_the_CM
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/After_the_CM">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>240</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">170</th>
+							<td>
+								<a href="/teams/211">
+									Fword
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">171</th>
+							<td>
+								<a href="/teams/310">
+									LL Gang
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">172</th>
+							<td>
+								<a href="/teams/182">
+									hakizashi
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">173</th>
+							<td>
+								<a href="/teams/251">
+									s4r7h4k
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">174</th>
+							<td>
+								<a href="/teams/106">
+									w3rni0
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">175</th>
+							<td>
+								<a href="/teams/172">
+									uwu
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">176</th>
+							<td>
+								<a href="/teams/391">
+									Kurisutina
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">177</th>
+							<td>
+								<a href="/teams/221">
+									l0neCr0n
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">178</th>
+							<td>
+								<a href="/teams/683">
+									phneutro
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">179</th>
+							<td>
+								<a href="/teams/730">
+									Tmp Temp Team
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">180</th>
+							<td>
+								<a href="/teams/370">
+									CyberNinjas
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/CyberNinjas">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">181</th>
+							<td>
+								<a href="/teams/155">
+									$wag
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">182</th>
+							<td>
+								<a href="/teams/487">
+									ZeroMemory
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/ZeroMemory">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">183</th>
+							<td>
+								<a href="/teams/93">
+									InfosecIITG
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/InfosecIITG">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">184</th>
+							<td>
+								<a href="/teams/602">
+									Lun4r
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">185</th>
+							<td>
+								<a href="/teams/550">
+									sesefadou
+
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">186</th>
+							<td>
+								<a href="/teams/271">
+									JHDiscord
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/JHDiscord">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>220</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">187</th>
+							<td>
+								<a href="/teams/379">
+									abhi
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">188</th>
+							<td>
+								<a href="/teams/385">
+									byc_404
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">189</th>
+							<td>
+								<a href="/teams/410">
+									hhh
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">190</th>
+							<td>
+								<a href="/teams/460">
+									0kam1
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">191</th>
+							<td>
+								<a href="/teams/266">
+									Shonan
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">192</th>
+							<td>
+								<a href="/teams/493">
+									n0L34d3r
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">193</th>
+							<td>
+								<a href="/teams/490">
+									Mercurii
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">194</th>
+							<td>
+								<a href="/teams/541">
+									buscuit
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">195</th>
+							<td>
+								<a href="/teams/152">
+									qqqq
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">196</th>
+							<td>
+								<a href="/teams/264">
+									p4nc4k3s
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">197</th>
+							<td>
+								<a href="/teams/231">
+									Zepto
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Zepto">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">198</th>
+							<td>
+								<a href="/teams/197">
+									sh3llsh0cked
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">199</th>
+							<td>
+								<a href="/teams/503">
+									takloose
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">200</th>
+							<td>
+								<a href="/teams/236">
+									get_rekt
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">201</th>
+							<td>
+								<a href="/teams/55">
+									%00Byte
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">202</th>
+							<td>
+								<a href="/teams/190">
+									guetsec
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">203</th>
+							<td>
+								<a href="/teams/112">
+									rad1enth9wks
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">204</th>
+							<td>
+								<a href="/teams/120">
+									uniform_defect
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">205</th>
+							<td>
+								<a href="/teams/734">
+									UDONG GULBEE
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">206</th>
+							<td>
+								<a href="/teams/716">
+									AttackerCommunity
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">207</th>
+							<td>
+								<a href="/teams/138">
+									ins4n1ty
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/ins4n1ty">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">208</th>
+							<td>
+								<a href="/teams/671">
+									StolenBytes
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">209</th>
+							<td>
+								<a href="/teams/387">
+									BQiao
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">210</th>
+							<td>
+								<a href="/teams/653">
+									ddddhm
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">211</th>
+							<td>
+								<a href="/teams/519">
+									buckeyes1
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">212</th>
+							<td>
+								<a href="/teams/746">
+									5vn0H4cK
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">213</th>
+							<td>
+								<a href="/teams/175">
+									F055il215
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/F055il215">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">214</th>
+							<td>
+								<a href="/teams/91">
+									UMDCSEC
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">215</th>
+							<td>
+								<a href="/teams/226">
+									ByteBandits
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/ByteBandits">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">216</th>
+							<td>
+								<a href="/teams/124">
+									T.S.U
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">217</th>
+							<td>
+								<a href="/teams/232">
+									JustLikeBono
+
+									
+								</a>
+							</td>
+							<td>200</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">218</th>
+							<td>
+								<a href="/teams/195">
+									GarfellowTeam
+
+									
+								</a>
+							</td>
+							<td>190</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">219</th>
+							<td>
+								<a href="/teams/702">
+									Alegori
+
+									
+								</a>
+							</td>
+							<td>180</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">220</th>
+							<td>
+								<a href="/teams/210">
+									404! Team name does not exist
+
+									
+								</a>
+							</td>
+							<td>160</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">221</th>
+							<td>
+								<a href="/teams/204">
+									irNoobs
+
+									
+								</a>
+							</td>
+							<td>160</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">222</th>
+							<td>
+								<a href="/teams/169">
+									null2root
+
+									
+								</a>
+							</td>
+							<td>150</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">223</th>
+							<td>
+								<a href="/teams/179">
+									7又7分之一节拍
+
+									
+								</a>
+							</td>
+							<td>150</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">224</th>
+							<td>
+								<a href="/teams/248">
+									sev
+
+									
+								</a>
+							</td>
+							<td>150</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">225</th>
+							<td>
+								<a href="/teams/522">
+									Disqualified
+
+									
+								</a>
+							</td>
+							<td>150</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">226</th>
+							<td>
+								<a href="/teams/422">
+									LYB-Team
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">227</th>
+							<td>
+								<a href="/teams/245">
+									20H
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">228</th>
+							<td>
+								<a href="/teams/564">
+									MarZ3r0
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">229</th>
+							<td>
+								<a href="/teams/191">
+									田埂
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">230</th>
+							<td>
+								<a href="/teams/560">
+									paddingsugar
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">231</th>
+							<td>
+								<a href="/teams/229">
+									NuttyShell
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">232</th>
+							<td>
+								<a href="/teams/47">
+									HackerKnights
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">233</th>
+							<td>
+								<a href="/teams/405">
+									maherea
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">234</th>
+							<td>
+								<a href="/teams/16">
+									fzhshzh
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/fzhshzh">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">235</th>
+							<td>
+								<a href="/teams/386">
+									bluehens
+
+									
+								</a>
+							</td>
+							<td>140</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">236</th>
+							<td>
+								<a href="/teams/372">
+									ViperX7
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">237</th>
+							<td>
+								<a href="/teams/287">
+									dadoctor
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">238</th>
+							<td>
+								<a href="/teams/103">
+									OnePerson
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">239</th>
+							<td>
+								<a href="/teams/504">
+									V3geD4g
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">240</th>
+							<td>
+								<a href="/teams/538">
+									noobexploiter
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">241</th>
+							<td>
+								<a href="/teams/475">
+									BHANCH
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">242</th>
+							<td>
+								<a href="/teams/570">
+									Stdor
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">243</th>
+							<td>
+								<a href="/teams/483">
+									sc0ut
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">244</th>
+							<td>
+								<a href="/teams/263">
+									trtd
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">245</th>
+							<td>
+								<a href="/teams/556">
+									nebulayoon
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">246</th>
+							<td>
+								<a href="/teams/35">
+									nm
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">247</th>
+							<td>
+								<a href="/teams/27">
+									IJCT
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">248</th>
+							<td>
+								<a href="/teams/357">
+									Nob0dy else
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">249</th>
+							<td>
+								<a href="/teams/694">
+									Probka
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">250</th>
+							<td>
+								<a href="/teams/695">
+									sazouki
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">251</th>
+							<td>
+								<a href="/teams/505">
+									UCCU
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">252</th>
+							<td>
+								<a href="/teams/707">
+									VoCo
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">253</th>
+							<td>
+								<a href="/teams/714">
+									BaneSux
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">254</th>
+							<td>
+								<a href="/teams/419">
+									SMP Gang
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">255</th>
+							<td>
+								<a href="/teams/352">
+									Just-in
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">256</th>
+							<td>
+								<a href="/teams/648">
+									ZeroC001
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">257</th>
+							<td>
+								<a href="/teams/747">
+									Cyb3rhunt3rs
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">258</th>
+							<td>
+								<a href="/teams/66">
+									muddgulch
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/muddgulch">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">259</th>
+							<td>
+								<a href="/teams/122">
+									TheScientists
+
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">260</th>
+							<td>
+								<a href="/teams/804">
+									BlueNet
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/BlueNet">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>120</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">261</th>
+							<td>
+								<a href="/teams/14">
+									Red Teamers
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">262</th>
+							<td>
+								<a href="/teams/377">
+									jllis
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">263</th>
+							<td>
+								<a href="/teams/198">
+									safebull
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">264</th>
+							<td>
+								<a href="/teams/362">
+									Mendacious Nitwits
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">265</th>
+							<td>
+								<a href="/teams/153">
+									System Meltdown
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">266</th>
+							<td>
+								<a href="/teams/350">
+									morb
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">267</th>
+							<td>
+								<a href="/teams/201">
+									Golems_treat
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">268</th>
+							<td>
+								<a href="/teams/276">
+									S1lver
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">269</th>
+							<td>
+								<a href="/teams/319">
+									Cronjobs in the Parkinglot
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">270</th>
+							<td>
+								<a href="/teams/113">
+									UICTC UNIBI
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">271</th>
+							<td>
+								<a href="/teams/404">
+									no_one
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">272</th>
+							<td>
+								<a href="/teams/178">
+									0xuzero
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">273</th>
+							<td>
+								<a href="/teams/30">
+									Da Baddest
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Da Baddest">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">274</th>
+							<td>
+								<a href="/teams/260">
+									NotHotdog
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">275</th>
+							<td>
+								<a href="/teams/499">
+									Leofwin
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">276</th>
+							<td>
+								<a href="/teams/514">
+									KatoMegumi
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/KatoMegumi">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">277</th>
+							<td>
+								<a href="/teams/506">
+									ISC
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">278</th>
+							<td>
+								<a href="/teams/518">
+									Server
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">279</th>
+							<td>
+								<a href="/teams/515">
+									Teamneeded
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">280</th>
+							<td>
+								<a href="/teams/476">
+									quriosity
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">281</th>
+							<td>
+								<a href="/teams/517">
+									VND0ng
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">282</th>
+							<td>
+								<a href="/teams/532">
+									cabai
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">283</th>
+							<td>
+								<a href="/teams/535">
+									lyc
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">284</th>
+							<td>
+								<a href="/teams/165">
+									133713pwnies
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">285</th>
+							<td>
+								<a href="/teams/465">
+									lexsd6
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">286</th>
+							<td>
+								<a href="/teams/563">
+									asdf
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">287</th>
+							<td>
+								<a href="/teams/72">
+									pk^ &lt;7F $!n9@mz
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">288</th>
+							<td>
+								<a href="/teams/584">
+									xisop
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">289</th>
+							<td>
+								<a href="/teams/543">
+									Hextraditables
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">290</th>
+							<td>
+								<a href="/teams/272">
+									NGA
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">291</th>
+							<td>
+								<a href="/teams/610">
+									Homeless
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">292</th>
+							<td>
+								<a href="/teams/616">
+									ev3r
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">293</th>
+							<td>
+								<a href="/teams/228">
+									cyb3rduck
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">294</th>
+							<td>
+								<a href="/teams/620">
+									sha681
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">295</th>
+							<td>
+								<a href="/teams/619">
+									p4w16
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">296</th>
+							<td>
+								<a href="/teams/611">
+									TestingTheWater
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">297</th>
+							<td>
+								<a href="/teams/627">
+									r5
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">298</th>
+							<td>
+								<a href="/teams/628">
+									CyberGreat
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">299</th>
+							<td>
+								<a href="/teams/661">
+									0x01ManArmy
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">300</th>
+							<td>
+								<a href="/teams/675">
+									n00000bs
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">301</th>
+							<td>
+								<a href="/teams/224">
+									sh4dowr4nger
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">302</th>
+							<td>
+								<a href="/teams/686">
+									3vilbuff3r
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">303</th>
+							<td>
+								<a href="/teams/688">
+									splitline
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">304</th>
+							<td>
+								<a href="/teams/689">
+									RedHats
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/RedHats">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">305</th>
+							<td>
+								<a href="/teams/696">
+									tr14l0n3
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">306</th>
+							<td>
+								<a href="/teams/158">
+									ShackleMount
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">307</th>
+							<td>
+								<a href="/teams/569">
+									iii
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">308</th>
+							<td>
+								<a href="/teams/480">
+									M4g1x
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">309</th>
+							<td>
+								<a href="/teams/329">
+									AgaKalkFlag
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">310</th>
+							<td>
+								<a href="/teams/718">
+									pwnstersrus
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">311</th>
+							<td>
+								<a href="/teams/600">
+									EISCTUTN
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">312</th>
+							<td>
+								<a href="/teams/737">
+									GEN HALILINTAR
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">313</th>
+							<td>
+								<a href="/teams/743">
+									lilbase
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">314</th>
+							<td>
+								<a href="/teams/738">
+									otters
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/otters">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">315</th>
+							<td>
+								<a href="/teams/704">
+									scr4pp3r1
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">316</th>
+							<td>
+								<a href="/teams/763">
+									ddmmhm
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">317</th>
+							<td>
+								<a href="/teams/768">
+									kato_megumi
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">318</th>
+							<td>
+								<a href="/teams/327">
+									raining_shell
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">319</th>
+							<td>
+								<a href="/teams/785">
+									Onepiece
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">320</th>
+							<td>
+								<a href="/teams/325">
+									Fireworks ?
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">321</th>
+							<td>
+								<a href="/teams/299">
+									UseAfterCoffee
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">322</th>
+							<td>
+								<a href="/teams/545">
+									NoNameFound
+
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">323</th>
+							<td>
+								<a href="/teams/270">
+									royalflushctf
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/royalflushctf">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>100</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">324</th>
+							<td>
+								<a href="/teams/484">
+									genesis
+
+									
+								</a>
+							</td>
+							<td>60</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">325</th>
+							<td>
+								<a href="/teams/507">
+									Redknights
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/Redknights">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>60</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">326</th>
+							<td>
+								<a href="/teams/114">
+									nameless
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">327</th>
+							<td>
+								<a href="/teams/580">
+									fr334aks
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">328</th>
+							<td>
+								<a href="/teams/665">
+									havefun9876
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">329</th>
+							<td>
+								<a href="/teams/586">
+									Kessel_b0ys
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">330</th>
+							<td>
+								<a href="/teams/69">
+									?
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">331</th>
+							<td>
+								<a href="/teams/523">
+									ZombieBot
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">332</th>
+							<td>
+								<a href="/teams/277">
+									whitehathacker
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">333</th>
+							<td>
+								<a href="/teams/767">
+									Cyber Security Trunojoyo
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">334</th>
+							<td>
+								<a href="/teams/769">
+									mapleleaves
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">335</th>
+							<td>
+								<a href="/teams/609">
+									wiwam845
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/wiwam845">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">336</th>
+							<td>
+								<a href="/teams/562">
+									krazykiity
+
+									
+								</a>
+							</td>
+							<td>40</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">337</th>
+							<td>
+								<a href="/teams/382">
+									abcd12
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">338</th>
+							<td>
+								<a href="/teams/389">
+									das
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">339</th>
+							<td>
+								<a href="/teams/358">
+									SaudiArabia
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">340</th>
+							<td>
+								<a href="/teams/398">
+									lucifer
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">341</th>
+							<td>
+								<a href="/teams/403">
+									DDM42
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">342</th>
+							<td>
+								<a href="/teams/6">
+									Globsec
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">343</th>
+							<td>
+								<a href="/teams/383">
+									ntrocubane
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">344</th>
+							<td>
+								<a href="/teams/406">
+									smugglers
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">345</th>
+							<td>
+								<a href="/teams/433">
+									for0starters
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">346</th>
+							<td>
+								<a href="/teams/402">
+									kulpritsec
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">347</th>
+							<td>
+								<a href="/teams/451">
+									wuur
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">348</th>
+							<td>
+								<a href="/teams/235">
+									lukbash
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/lukbash">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">349</th>
+							<td>
+								<a href="/teams/437">
+									spoilers
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">350</th>
+							<td>
+								<a href="/teams/331">
+									T4ng0_t34m
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">351</th>
+							<td>
+								<a href="/teams/99">
+									Wolfpuplicky
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">352</th>
+							<td>
+								<a href="/teams/431">
+									blackshell
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">353</th>
+							<td>
+								<a href="/teams/418">
+									mag1c
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">354</th>
+							<td>
+								<a href="/teams/268">
+									S32d0w
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">355</th>
+							<td>
+								<a href="/teams/273">
+									RH01
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">356</th>
+							<td>
+								<a href="/teams/96">
+									GNIR33NIGN3
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">357</th>
+							<td>
+								<a href="/teams/424">
+									muranchu
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">358</th>
+							<td>
+								<a href="/teams/531">
+									xpurge
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">359</th>
+							<td>
+								<a href="/teams/252">
+									OverDover
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">360</th>
+							<td>
+								<a href="/teams/234">
+									Th3ng4k0l4
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">361</th>
+							<td>
+								<a href="/teams/230">
+									outOfCheese
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">362</th>
+							<td>
+								<a href="/teams/267">
+									hackhash
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/hackhash">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">363</th>
+							<td>
+								<a href="/teams/578">
+									0x5c71873f
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">364</th>
+							<td>
+								<a href="/teams/161">
+									fairy tale
+
+									
+										
+										<a href="https://majorleaguecyber.org/t/fairy tale">
+											<span class="badge badge-primary">Official</span>
+										</a>
+										
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">365</th>
+							<td>
+								<a href="/teams/593">
+									Ammas_Hackers
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">366</th>
+							<td>
+								<a href="/teams/241">
+									ggez
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">367</th>
+							<td>
+								<a href="/teams/193">
+									4k3l4rr3
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">368</th>
+							<td>
+								<a href="/teams/623">
+									Day
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">369</th>
+							<td>
+								<a href="/teams/630">
+									すーぱー呂布呂布ぱらだいす!
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">370</th>
+							<td>
+								<a href="/teams/214">
+									Excalibur
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">371</th>
+							<td>
+								<a href="/teams/262">
+									enTaris
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">372</th>
+							<td>
+								<a href="/teams/649">
+									kolt
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">373</th>
+							<td>
+								<a href="/teams/658">
+									nuk3
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">374</th>
+							<td>
+								<a href="/teams/666">
+									The Society
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">375</th>
+							<td>
+								<a href="/teams/194">
+									deNableD
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">376</th>
+							<td>
+								<a href="/teams/615">
+									wizomega
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">377</th>
+							<td>
+								<a href="/teams/701">
+									bu99ed
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">378</th>
+							<td>
+								<a href="/teams/485">
+									clb-ctf
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">379</th>
+							<td>
+								<a href="/teams/733">
+									soulctf
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">380</th>
+							<td>
+								<a href="/teams/732">
+									Idleless
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">381</th>
+							<td>
+								<a href="/teams/583">
+									catrace
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">382</th>
+							<td>
+								<a href="/teams/473">
+									dk
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">383</th>
+							<td>
+								<a href="/teams/765">
+									um
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">384</th>
+							<td>
+								<a href="/teams/337">
+									jpogmafia
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">385</th>
+							<td>
+								<a href="/teams/773">
+									not_a_bot
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">386</th>
+							<td>
+								<a href="/teams/45">
+									LinyTail
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">387</th>
+							<td>
+								<a href="/teams/33">
+									VisionInjection
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">388</th>
+							<td>
+								<a href="/teams/791">
+									su310
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">389</th>
+							<td>
+								<a href="/teams/49">
+									onotch
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+						<tr>
+							<th scope="row" class="text-center">390</th>
+							<td>
+								<a href="/teams/801">
+									TestoHorsto
+
+									
+								</a>
+							</td>
+							<td>20</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+	
+</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io" class="text-secondary">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script defer src="/themes/uiuctf/static/js/vendor.bundle.min.js?d=c8eada87"></script>
+	<script defer src="/themes/uiuctf/static/js/core.min.js?d=c8eada87"></script>
+	<script defer src="/themes/uiuctf/static/js/helpers.min.js?d=c8eada87"></script>
+
+	
+	<script defer src="/themes/uiuctf/static/js/pages/scoreboard.min.js?d=c8eada87"></script>
+
+
+	
+	<script defer src="/themes/uiuctf/static/js/plotly.bundle.min.js?d=c8eada87"></script>
+
+
+	
+
+	
+</body>
+</html>

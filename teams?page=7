@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIUCTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/themes/uiuctf/static/img/favicon.ico?d=c8eada87" type="image/x-icon">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/fonts.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/main.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/core.min.css?d=c8eada87">
+	<link rel="stylesheet" href="/themes/uiuctf/static/css/pranav.min.css?d=c8eada87">
+	
+
+	
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "3d4105cd1d1f9775bfe549cb89681f3168021343d0815428f94002a035637d6a",
+			'userMode': "teams",
+			'userId': 0,
+			'start': 1595030400,
+			'end': 1595210400,
+		}
+	</script>
+	<style id="theme-color">
+:root {--theme-color: #71B5FB;}
+.navbar{background-color: var(--theme-color) !important;}
+.jumbotron{background-color: var(--theme-color) !important;}
+  font-family: 'FinkHeavy'!important;
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="/files/0ef3ada3b5006be684326e01ea3ba13e/uiuctf-small.png" height="25" alt="UIUCTF">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars"
+					aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/users">Users</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/teams">Teams</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/register">
+									<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+										<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+									</span>
+									<span class="d-sm-block d-md-none d-lg-block">
+										<i class="fas fa-user-plus pr-1"></i>Register
+									</span>
+								</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="/login">
+								<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+									<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+								</span>
+								<span class="d-sm-block d-md-none d-lg-block">
+									<i class="fas fa-sign-in-alt pr-1"></i>Login
+								</span>
+							</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+<div class="jumbotron">
+	<div class="container">
+		<h1>Teams</h1>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<td><b>Team</b></td>
+						<td><b>Website</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Affiliation</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Country</b></td>
+					</tr>
+				</thead>
+				<tbody>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/311">Boomers</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/312">DeusExMachina</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/313">flying is hard</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/flying is hard">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/314">DC604</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/315">qwertyperson</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/qwertyperson">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/316">&#39;); DROP TABLE users; --</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/317">x0</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/318">Gh0stSh3ll</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/Gh0stSh3ll">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/319">Cronjobs in the Parkinglot</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/320">Hack&#39;raw</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+								<a href="https://discord.me/hackraw" target="_blank">
+									<i class="fas fa-external-link-alt" data-toggle="tooltip" data-placement="top" title="https://discord.me/hackraw"></i>
+								</a>
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-fr"></i>
+									France
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/321">Disconnected</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/322">lone_player</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/323">Cyber Grizzlies</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/324">stankc</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/325">Fireworks ?</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/326">HTCPCP://</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/327">raining_shell</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/328">[Dora,] The Internet Explorers</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/329">AgaKalkFlag</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/330">b01lers</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/b01lers">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/331">T4ng0_t34m</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/332">technic</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/technic">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/333">infuzion</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/infuzion">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+								
+								<span>
+									UMD
+								</span>
+								
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-us"></i>
+									United States
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/334">RATF</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/RATF">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/335">VelociraptorPenguins</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/VelociraptorPenguins">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/336">dura - alone</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-de"></i>
+									Germany
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/337">jpogmafia</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/338">Cyber Kinpatsus</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/339">itscyber</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-us"></i>
+									United States
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/340">Jump Rope Ninjas</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/341">::1</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/342">TheArcade</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/343">Cafe Hug Platter</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/344">e3sh!t</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-ba"></i>
+									Bosnia &amp; Herzegovina
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/345">Isle Be Back</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/346">bolgia4</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/347">Edge</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/348">dplateam</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/349">w01verines</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/w01verines">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/350">morb</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/351">PFS</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/352">Just-in</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/353">WreckTheLine</a>
+						
+						
+							<a href="https://majorleaguecyber.org/t/WreckTheLine">
+								<span class="badge badge-primary">Official</span>
+							</a>
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+								<a href="https://wrecktheline.com" target="_blank">
+									<i class="fas fa-external-link-alt" data-toggle="tooltip" data-placement="top" title="https://wrecktheline.com"></i>
+								</a>
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/354">noraneco</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/355">bopsled</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/356">CyberTaskForce Zero</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/357">Nob0dy else</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/358">SaudiArabia</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+									<i class="flag-sa"></i>
+									Saudi Arabia
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/359">Chinchila</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+					<tr>
+						<td>
+						
+							<a href="/teams/360">isss</a>
+						
+						
+						</td>
+						<td class="text-center" style="width: 10px;">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell">
+							
+						</td>
+						<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+							<span>
+								
+							</span>
+						</td>
+					</tr>
+				
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="text-center">Page
+				<br>
+				
+					<a href="/teams?page=6">
+						&lt;&lt;&lt;
+					</a>
+				
+				<select class="page-select">
+					
+					<option >1</option>
+					
+					<option >2</option>
+					
+					<option >3</option>
+					
+					<option >4</option>
+					
+					<option >5</option>
+					
+					<option >6</option>
+					
+					<option selected>7</option>
+					
+					<option >8</option>
+					
+					<option >9</option>
+					
+					<option >10</option>
+					
+					<option >11</option>
+					
+					<option >12</option>
+					
+					<option >13</option>
+					
+					<option >14</option>
+					
+					<option >15</option>
+					
+					<option >16</option>
+					
+				</select>
+				
+					<a href="/teams?page=8">
+						&gt;&gt;&gt;
+					</a>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io" class="text-secondary">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script defer src="/themes/uiuctf/static/js/vendor.bundle.min.js?d=c8eada87"></script>
+	<script defer src="/themes/uiuctf/static/js/core.min.js?d=c8eada87"></script>
+	<script defer src="/themes/uiuctf/static/js/helpers.min.js?d=c8eada87"></script>
+
+	
+	<script defer src="/themes/uiuctf/static/js/pages/main.min.js?d=c8eada87"></script>
+	
+
+	
+
+
+	
+
+	
+</body>
+</html>

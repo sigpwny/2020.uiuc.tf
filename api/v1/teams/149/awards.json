@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": 149, "requirements": null, "description": "Found a bug in the mmap syscall", "user": 328, "type": "standard", "team_id": 149, "value": 100, "user_id": 328, "id": 2, "date": "2020-07-19T03:44:05+00:00", "category": "Kernel Exploitation", "icon": null, "name": "MMAP Strange Behavior"}]}
